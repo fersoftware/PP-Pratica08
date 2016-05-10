@@ -95,8 +95,7 @@ namespace PP_Pratica08
             if ( n == "00000000000" || n == "11111111111" || n == "22222222222" || n == "33333333333" || n == "44444444444" ||  n == "55555555555" ||  n == "66666666666" ||  n == "77777777777" || n == "88888888888" || n == "99999999999")
             {
                 return false;
-            }
-                
+            }                
 
             int A, B, C, D, E, F, G, H, I;
             A = int.Parse(a) * 10;
@@ -109,10 +108,8 @@ namespace PP_Pratica08
             H = int.Parse(h) * 3;
             I = int.Parse(i) * 2;
             
-            int soma = A + B + C + D + E + F + G + H + I;
-            int soma1 = A + B + C + D + E + F + G + H + I;
-            int restDiv = (soma * 10) % 11;
-            int restDiv1 = (soma * 10) % 11;
+            int soma = A + B + C + D + E + F + G + H + I;            
+            int restDiv = (soma * 10) % 11;           
             int rst1= 0, rst2 = 0;
 
             if(restDiv == int.Parse(x))
